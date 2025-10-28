@@ -1,6 +1,7 @@
 # 🦴 Detección de fracturas óseas en radiografías
 
 **ISFT 190 – Procesamiento de Imágenes en Python**
+
 **Autora:** Paola Fernanda Dueña
 
 ## 📘 Descripción
