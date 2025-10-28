@@ -1,39 +1,41 @@
-# Deteccion-de-fracturas-Rayos-X-
-Este es un visualizador de escritorio simple construido con Python y Tkinter, diseñado para comparar la precisión de dos modelos de detección de objetos (un "Baseline" y un "Pipeline Mejorado") en imágenes de rayos X, centrándose en la detección de fracturas.
+# 🦴 Detección de fracturas óseas en radiografías
 
-🌟 Características
+**ISFT 190 – Procesamiento de Imágenes en Python**
+**Autora:** Paola Fernanda Dueña
 
-Visualización lado a lado de las predicciones del modelo.
+## 📘 Descripción
 
-Comparación de las cajas delimitadoras (Bounding Boxes) con la verdad fundamental (Ground Truth, GT).
+Este proyecto busca desarrollar un pipeline reproducible para detectar automáticamente si una radiografía presenta fractura o no, utilizando técnicas clásicas de procesamiento de imágenes. El objetivo es construir un sistema educativo que sirva como apoyo al diagnóstico médico, demostrando un flujo completo: entrada → preprocesado → método → evaluación → visualización.
 
-Cálculo y visualización de métricas clave (IoU promedio, TP, FP, FN, Precision, Recall y F1-Score) por imagen.
+## 🧠 Tecnologías y librerías principales
 
-Capacidad para ajustar el umbral de exigencia de acierto (IoU Threshold) en tiempo real.
+* Python 3.10
+* NumPy: operaciones numéricas y manejo de arrays
+* Pandas: manipulación de datos tabulares
+* Matplotlib: visualización de gráficos y resultados
+* scikit-image: procesamiento de imágenes (filtros, transformaciones, contraste)
+* OpenCV: lectura, preprocesado y mejora de imágenes
+* scikit-learn: extracción de características y clasificación (SVM, métricas)
+* Pillow: carga y manipulación básica de imágenes
 
-Simulación de datos para demostración.
+> 🔧 Todas las dependencias están detalladas en el archivo `requirements.txt`.
 
-🛠️ Requisitos
+## 📊 Dataset
 
-Asegúrate de tener Python 3.x instalado.
+**FracAtlas Original Dataset**
 
-Dependencias de Python
+* Fuente: [Kaggle](https://www.kaggle.com/datasets/mahmudulhasantasin/fracatlas-original-dataset)
+* Contiene radiografías clasificadas con y sin fracturas
+* Uso con fines académicos únicamente
 
-Necesitarás las siguientes librerías:
+## 📈 Métricas de evaluación
 
-Pillow (PIL) para el procesamiento de imágenes.
+* Accuracy
+* Precision / Recall / F1-Score
+* Matriz de confusión
 
-numpy para los cálculos matemáticos (promedios, min/max).
+## 🧩 Reproducibilidad
 
-tkinter (generalmente viene incluido con Python, pero si no, instálalo).
-
-Para instalar las dependencias, utiliza el archivo requirements.txt:
-
-pip install -r requirements.txt
-
-
-🚀 Uso
-
-1. Configuración de Rutas
-
-Antes de ejecutar, debes modificar las rutas de datos en la parte superior del archivo mejoras_de_gemini.py:
+* División de datos train / val / test con semillas fijas
+* Resultados guardados en `/results`
+* Notebook ejecutable de punta a punta sin errores
