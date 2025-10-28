@@ -37,27 +37,3 @@ pip install -r requirements.txt
 1. Configuración de Rutas
 
 Antes de ejecutar, debes modificar las rutas de datos en la parte superior del archivo mejoras_de_gemini.py:
-
-# Línea 18 en mejoras_de_gemini.py
-DATA_ROOT = "path/to/your/xray/images" 
-LABEL_ROOT = "path/to/your/label/files" 
-
-
-Nota: Si dejas las rutas por defecto, el programa creará una carpeta llamada demo_data y generará imágenes grises para la demostración, permitiendo que la aplicación se ejecute inmediatamente.
-
-2. Ejecutar la Aplicación
-
-Ejecuta el script principal desde tu terminal:
-
-python mejoras_de_gemini.py
-
-
-La aplicación se abrirá en una ventana de escritorio, permitiéndote navegar entre las imágenes de ejemplo simuladas y analizar el rendimiento de los modelos.
-
-📂 Estructura del Proyecto
-
-mejoras_de_gemini.py: El script principal de la aplicación, que contiene toda la lógica, la interfaz de usuario (Tkinter) y las funciones de cálculo de métricas.
-
-README.md: Este archivo.
-
-requirements.txt: Lista de dependencias de Python.
