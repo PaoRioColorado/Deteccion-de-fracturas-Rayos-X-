@@ -1,0 +1,6 @@
+train: Dataset/train/images
+val: Dataset/validation/images
+test: Dataset/test/images
+
+nc: 1
+names: ["fractured"]
