@@ -31,7 +31,7 @@ El proyecto compara un **baseline sencillo** con un **pipeline mejorado**, evalu
 ## 📊 Dataset
 **FracAtlas Original Dataset**  
 - Fuente: [Kaggle](https://www.kaggle.com/datasets/mahmudulhasantasin/fracatlas-original-dataset)  
-- Contiene radiografías con **fraturas etiquetadas** mediante bounding boxes.  
+- Contiene radiografías con **fracturas etiquetadas** mediante bounding boxes.  
 - Licencia: uso académico permitido (CC BY).  
 - Estructura esperada en el repositorio:  
 
