@@ -76,5 +76,9 @@ Las imágenes utilizadas son de acceso académico y no contienen información pe
 
 Pipeline: Imagen → lectura y escalado → simulación de detección → cálculo de métricas → visualización comparativa.
 
+El dataset se organiza en subconjuntos train, validation y test siguiendo buenas prácticas.
+En esta implementación, la demo utiliza imágenes del conjunto train para la comparación visual.
+
+
 
 
