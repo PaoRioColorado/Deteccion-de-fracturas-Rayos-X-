@@ -33,5 +33,15 @@ El proyecto compara un **baseline sencillo** con un **pipeline mejorado**, evalu
 - Fuente: [Kaggle](https://www.kaggle.com/datasets/mahmudulhasantasin/fracatlas-original-dataset)  
 - Contiene radiografías con **fracturas etiquetadas** mediante bounding boxes.  
 - Licencia: uso académico permitido (CC BY).  
-- Estructura esperada en el repositorio:  
+  
+---
+
+## Limitaciones del dataset
+El dataset presenta algunas limitaciones comunes en radiografías reales:
+- Variabilidad en la calidad de imagen y resolución.
+- Diferencias de iluminación y contraste.
+- Fracturas sutiles que no siempre son fácilmente visibles.
+- Posible desbalance entre imágenes con y sin fractura.
+
+Estas limitaciones pueden afectar la precisión de la detección y explican algunos errores observados.
 
