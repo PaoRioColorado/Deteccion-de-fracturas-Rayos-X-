@@ -45,3 +45,36 @@ El dataset presenta algunas limitaciones comunes en radiografías reales:
 
 Estas limitaciones pueden afectar la precisión de la detección y explican algunos errores observados.
 
+---
+
+## Baseline y pipeline mejorado
+Se implementa un baseline sencillo que simula detecciones con mayor ruido, desplazamientos y falsos positivos.
+El pipeline mejorado reduce el ruido, ajusta mejor las bounding boxes y disminuye la cantidad de detecciones erróneas.
+
+Ambos enfoques se comparan utilizando métricas objetivas como IoU promedio y F1-score.
+
+---
+
+## Análisis crítico y trabajo futuro
+Si bien el pipeline mejorado muestra mejores métricas que el baseline, el sistema presenta limitaciones importantes:
+- La detección es simulada y no corresponde a un modelo entrenado real.
+- El desempeño depende fuertemente de la calidad de las anotaciones.
+- No se evalúa en un entorno clínico real.
+
+Como trabajo futuro se propone:
+- Integrar un detector real basado en deep learning (por ejemplo YOLO o RetinaNet).
+- Ampliar el dataset y balancear clases.
+- Incorporar validación cruzada y métricas adicionales.
+
+---
+
+## Consideraciones éticas
+Este proyecto tiene fines educativos y no debe utilizarse como herramienta diagnóstica clínica.
+Las imágenes utilizadas son de acceso académico y no contienen información personal identificable.
+
+---
+
+Pipeline: Imagen → lectura y escalado → simulación de detección → cálculo de métricas → visualización comparativa.
+
+
+
